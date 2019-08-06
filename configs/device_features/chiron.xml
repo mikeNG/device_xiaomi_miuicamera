@@ -74,7 +74,7 @@
     <bool name="support_camera_manual_function">true</bool>
     <!--whether capture when user press down the shutter in camera instead of left the shutter-->
     <bool name="support_camera_press_down_capture">true</bool>
-    <bool name="front_fingerprint_sensor">true</bool>
+    <bool name="front_fingerprint_sensor">false</bool>
     <!--whether support capture in torch mode in camera-->
     <bool name="support_camera_torch_capture">true</bool>
     <!--whether freeze preview after hdr capture in camera-->
@@ -107,6 +107,8 @@
     <bool name="is_camera_isp_rotated">false</bool>
     <!--whether support snap with screen off  in camera-->
     <bool name="support_camera_quick_snap">true</bool>
+    <!--whether support psensor in pocket mode (true by default)-->
+    <bool name="support_psensor_pocket_mode">false</bool>
     <!--the vendor feature, it's value may be qcom,mediatek,leadcore or nvidia-->
     <string name="vendor">qcom</string>
     <!--Flag of reduce preview size in camera(1:reduce, 0:do not reduce; 1st byte:rear camera, 2nd byte:front camera, 3rd byte:rear video, 4th byte:front video )-->
@@ -122,15 +124,11 @@
     <!--total steps number of camera compensation-->
     <float name="camera_exposure_compensation_steps_num">12.0</float>
     <!--Left margin of count down parent layout for front camera-->
-    <float name="camera_front_count_down_margin">-0.5573</float>
+    <float name="camera_front_count_down_margin">-0.8546</float>
     <!--camera continuous shot callback class name-->
     <string name="camera_continuous_shot_callback_class">ContinuousShotCallback</string>
     <!--camera continuous shot callback setter method name-->
     <string name="camera_continuous_shot_callback_setter">setContinuousShotCallback</string>
-    <!--whether support optical zoom in camera-->
-    <bool name="is_support_optical_zoom">true</bool>
-    <!--whether support portrait in camera-->
-    <bool name="is_support_portrait">true</bool>
     <!--whether camera support portrait mode switch -->
     <bool name="camera_is_support_portrait_switch">true</bool>
     <!-- whether camera support AI lens entry -->
@@ -147,6 +145,8 @@
 　  <bool name="support_front_bokeh">true</bool>
     <!--whether support auto mirror in camera-->
     <bool name="support_auto_mirror">false</bool>
+    <!--whether taking 18x9 ratio screen in camera-->
+    <bool name="is_18x9_ratio_screen">true</bool>
     <!--whether support add watermark on bottom left of picture-->
     <bool name="support_picture_watermark">true</bool>
     <!-- water mark default value -->
@@ -159,4 +159,6 @@
     <bool name="support_camera_video_face_detection">true</bool>
     <!--camera max quality which support high frame rate,1:480 2:720 3:1080-->
     <integer name="support_camera_hfr_max_quality">3</integer>
+    <!--whether back camera support bokeh or not-->
+    <bool name="is_back_bokeh_supported">true</bool>
 </features>

@@ -18,7 +18,7 @@ PRODUCT_PACKAGES += \
 
 # Device Features Configuration
 PRODUCT_COPY_FILES += \
-    device/xiaomi/miuicamera/configs/device_features/sagit.xml:system/etc/device_features/sagit.xml
+    device/xiaomi/miuicamera/configs/device_features/chiron.xml:system/etc/device_features/chiron.xml
 
 # Privapp permissions
 PRODUCT_COPY_FILES += \
